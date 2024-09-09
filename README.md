@@ -42,7 +42,7 @@ It's as easy as pie! Just type `fastfetch` in your terminal and watch the magic 
 
 Get the configuration file with a single click:
 
-[⬇️ Download config.jsonc](https://raw.githubusercontent.com/yourusername/your-repo-name/main/config.jsonc)
+[⬇️ Download config.jsonc](https://raw.githubusercontent.com/dacrab/fastfetch-config/main/config.jsonc)
 
 ## 🎨 Customization
 
