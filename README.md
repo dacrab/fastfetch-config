@@ -31,7 +31,7 @@ Get up and running in no time:
 
 1. Install Fastfetch and set up the configuration in one command:
    ```bash
-   wget -O ~/.config/fastfetch/config.jsonc https://raw.githubusercontent.com/yourusername/your-repo-name/main/config.jsonc
+   wget -O ~/.config/fastfetch/config.jsonc https://raw.githubusercontent.com/dacrab/fastfetch-config/main/config.jsonc
    ```
 
 ## 🚀 Usage
