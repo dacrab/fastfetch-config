@@ -8,17 +8,15 @@ Welcome to a stunning configuration for [Fastfetch](https://github.com/fastfetch
 2. [Preview](#-preview)
 3. [Installation](#️-installation)
 4. [Usage](#-usage)
-5. [Quick Download](#-quick-download)
-6. [Customization](#-customization)
+5. [Customization](#-customization)
+6. [Quick Download](#-quick-download)
 7. [License](#-license)
 
 ## ✨ Features
 
-Prepare to be amazed by:
-
-- 🖥️ System Information (OS, Kernel, Uptime, Packages)
-- 🎨 Desktop Environment Showcase (DE, WM, Theme, Resolution, Shell, Font)
-- 💻 Hardware Specs (CPU, GPU, Memory, Disk usage)
+- 🖥️ Comprehensive System Information (OS, Kernel, Uptime, Packages)
+- 🎨 Detailed Desktop Environment Showcase (DE, WM, Theme, Resolution, Shell, Font)
+- 💻 In-depth Hardware Specifications (CPU, GPU, Memory, Disk usage)
 - 🌈 Vibrant Color Palette Display
 
 ## 👀 Preview
@@ -27,29 +25,47 @@ Prepare to be amazed by:
 
 ## 🛠️ Installation
 
-Get up and running in no time:
+### 1. Install Fastfetch:
 
-1. Install Fastfetch and set up the configuration in one command:
-   ```bash
-   wget -O ~/.config/fastfetch/config.jsonc https://raw.githubusercontent.com/dacrab/fastfetch-config/main/config.jsonc
-   ```
+| System | Command |
+|--------|---------|
+| Arch Linux | `sudo pacman -S fastfetch` |
+| Ubuntu/Debian | `sudo add-apt-repository ppa:fastfetch-devs/fastfetch && sudo apt update && sudo apt install fastfetch` |
+| macOS (Homebrew) | `brew install fastfetch` |
+| Windows (Scoop) | `scoop install fastfetch` |
+| Windows (Winget) | `winget install fastfetch` |
+
+For other systems, refer to the [official installation guide](https://github.com/fastfetch-cli/fastfetch#installation).
+
+### 2. Set up the configuration:
+
+| System | Command |
+|--------|---------|
+| Linux/macOS | `mkdir -p ~/.config/fastfetch && wget -O ~/.config/fastfetch/config.jsonc https://raw.githubusercontent.com/dacrab/fastfetch-config/main/config.jsonc` |
+| Windows | ```New-Item -ItemType Directory -Force -Path "$env:APPDATA\fastfetch" ; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dacrab/fastfetch-config/main/config.jsonc" -OutFile "$env:APPDATA\fastfetch\config.jsonc"``` |
 
 ## 🚀 Usage
 
-It's as easy as pie! Just type `fastfetch` in your terminal and watch the magic unfold.
-
-## 📥 Quick Download
-
-Get the configuration file with a single click:
-
-[⬇️ Download config.jsonc](https://raw.githubusercontent.com/dacrab/fastfetch-config/main/config.jsonc)
+Simply type `fastfetch` in your terminal to display your system information in a beautifully formatted layout.
 
 ## 🎨 Customization
 
-Let your creativity run wild! Tweak the `config.jsonc` file to your heart's content. For inspiration and guidance, check out the [Fastfetch documentation](https://github.com/fastfetch-cli/fastfetch/wiki/Configuration).
+To tailor the display to your preferences:
+
+1. Open the `config.jsonc` file in your preferred text editor.
+2. Modify the settings according to your needs.
+3. Save the file and run `fastfetch` to see your changes.
+
+For detailed customization options and syntax, refer to the [Fastfetch documentation](https://github.com/fastfetch-cli/fastfetch/wiki/Configuration).
+
+## 📥 Quick Download
+
+For quick access to the configuration file:
+
+[⬇️ Download config.jsonc](https://raw.githubusercontent.com/dacrab/fastfetch-config/main/config.jsonc)
 
 ## 📜 License
 
-This magnificent configuration is yours to use under the MIT License. For the nitty-gritty details, take a peek at the [LICENSE](LICENSE) file.
+This configuration is available under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-Enjoy your newly beautified system information display! 🎉
+Enjoy your beautifully displayed system information! 🎉
